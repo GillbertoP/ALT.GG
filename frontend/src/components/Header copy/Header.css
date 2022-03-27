@@ -1,0 +1,19 @@
+.navbar {
+  margin-bottom: 20px;
+}
+
+.headerContainer {
+  padding: 0rem 1.5rem;
+}
+
+#navbarScrollingDropdown {
+  color: #ddd;
+}
+
+.nav-item {
+  padding-left: 0rem;
+}
+
+#navbarScroll {
+  padding-left: 0.5rem;
+}

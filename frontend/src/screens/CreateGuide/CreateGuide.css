@@ -1,0 +1,66 @@
+form {
+  padding-bottom: 20px;
+}
+
+.section-post-inner {
+  background-color: white;
+  border-radius: 3px;
+}
+
+.section-post-title-inner {
+  background-color: white;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+#guideFormTitle {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  border-radius: 3px 3px 0px 0px;
+  padding: 15px 20px 10px 20px;
+}
+
+#guideFormSubtitle {
+  font-size: 16px;
+  border-radius: 0px 0px 3px 3px;
+  padding: 10px 20px 15px 20px;
+}
+
+.section-post input {
+  border-radius: 0;
+  border: 1px solid #fff;
+}
+
+.section-post input:focus {
+  box-shadow: none;
+  border: 1px solid #ddd;
+  background-color: #fcfcfc;
+}
+
+.toolbar-class {
+  padding: 15px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.toolbar-class a {
+  text-decoration: none;
+  color: black;
+}
+
+.editor-class {
+  padding: 0px 20px;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+
+.preview-text {
+  width: 100%;
+}
+
+.guide-submit-button {
+  display: inline-block;
+  margin-bottom: 20px;
+}

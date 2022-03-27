@@ -1,0 +1,167 @@
+.main {
+  padding: 0 0px;
+}
+
+.container-fluid {
+  padding: 0 60px;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.jumbo {
+  padding: 60px 60px;
+  background-color: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+}
+
+.jumbo .jumbo-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.jumbo .jumbo-subtitle {
+  font-size: 22px;
+}
+
+.jumbo .jumbo-image {
+  position: absolute;
+  display: flex;
+  right: 0px;
+}
+
+.jumbo .jumbo-image-home {
+  top: auto;
+  right: 100px;
+  bottom: 0;
+}
+
+.jumbo .jumbo-image-home img {
+  width: 200px;
+}
+
+.section {
+  padding: 20px 0 0px 0;
+}
+
+.section .section-title {
+  font-size: 24px;
+  padding-bottom: 14px;
+}
+
+.section-guide .section-card-list.recent {
+  height: 360px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.section .section-card-list a {
+  text-decoration: none;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.section .section-card-list .section-card {
+  width: 240px;
+  color: #000;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.section .section-card-list .section-card .section-card-image {
+  background-color: black;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+.section .section-card-list .section-card .card-body,
+.section .section-card-list .section-card .card-footer {
+  padding: 17px;
+}
+
+.section .section-card-list .section-card .section-card-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.section .section-card-list .section-card .section-card-subtitle {
+  padding-top: 1px;
+  font-size: 12px;
+  color: #777;
+}
+
+.section .section-card-list .section-card .section-card-footer {
+  font-weight: 450;
+  font-size: 12px;
+  color: #777;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.section
+  .section-card-list
+  .section-card
+  .section-card-footer
+  .section-card-footer-stuff {
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.section
+  .section-card-list
+  .section-card
+  .section-card-footer
+  .section-card-footer-stuff
+  .section-card-footer-icon {
+  display: inline-block;
+}
+
+.section
+  .section-card-list
+  .section-card
+  .section-card-footer
+  .section-card-footer-stuff
+  .section-card-footer-icon
+  svg {
+  margin-top: -3px;
+}
+
+.section
+  .section-card-list
+  .section-card
+  .section-card-footer
+  .section-card-footer-stuff
+  .section-card-footer-text {
+  display: inline-block;
+  margin: 0 15px 0 5px;
+}
+
+.section-guide
+  .section-card-list
+  .section-card
+  .section-card-footer
+  .section-card-footer-stuff
+  .section-card-footer-icon,
+.section-guide
+  .section-card-list
+  .section-card
+  .section-card-footer
+  .section-card-footer-stuff
+  .section-card-footer-text {
+  padding-top: 3px;
+}
+
+.section
+  .section-card-list
+  .section-card
+  .section-card-footer
+  .section-card-footer-right {
+  text-align: right;
+  float: right;
+  font-size: 11px;
+}

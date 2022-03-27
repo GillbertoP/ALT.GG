@@ -1,0 +1,535 @@
+.navbar {
+  margin-bottom: 0px;
+}
+
+.side-menu {
+  position: fixed;
+  background: #000;
+  width: 280px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 15px 15px;
+  transition: width 0.2s ease-in;
+  z-index: 999;
+}
+
+.side-menu.inactive {
+  width: 70px;
+}
+
+.side-menu.canClick {
+  cursor: pointer;
+}
+
+.side-menu .top-section {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+}
+
+.side-menu .top-section a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+.side-menu .top-section .logo {
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.side-menu .top-section .logo svg {
+  fill: cyan;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+}
+
+.side-menu .top-section .toggle-menu-button {
+  height: 40px;
+  width: 40px;
+  float: right;
+  box-sizing: border-box;
+  top: 1px;
+  left: 210px;
+  position: absolute;
+}
+
+.side-menu .top-section .toggle-menu-button svg {
+  height: 32px;
+  width: 32px;
+  padding: 5px;
+  margin: 4px 0px 0px 8px;
+  border: 2px solid cyan;
+  border-radius: 3px;
+  background-color: cyan;
+  fill: #000;
+  cursor: pointer;
+}
+
+.side-menu .search-controller {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  margin: 15px 0px;
+}
+
+.side-menu .search-controller .search-controller-button {
+  color: #fff;
+  position: absolute;
+  height: 100%;
+}
+
+.side-menu .search-controller .search-controller-button svg {
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+}
+
+.side-menu .search-controller input[type="text"] {
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  height: 40px;
+  width: 100%;
+  background: #333;
+  display: block;
+  padding-left: 50px;
+  padding-right: 0px;
+  color: #ccc;
+  transition: padding-left 0.2s;
+  font-size: 15px;
+}
+
+.menu-divider {
+  width: 100%;
+  height: 1px;
+  border-radius: 1px;
+  background: #333;
+}
+
+.side-menu .menu-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.side-menu .menu-list .menu-item {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  font-weight: 450;
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.side-menu .menu-list .menu-item:hover {
+  background-color: #ddd;
+}
+
+.side-menu .menu-list .menu-item.active {
+  width: 100%;
+}
+
+.side-menu .menu-list .menu-item .menu-icon {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  transition: 0.2s;
+  border-radius: 3px;
+  padding-top: 6px;
+}
+
+.side-menu .menu-list .menu-item .menu-icon img {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-top: 1px;
+  width: 20px;
+  height: 20px;
+}
+
+.side-menu .menu-list .menu-item .menu-icon svg {
+  fill: #999;
+  width: 26px;
+  height: 26px;
+  transition: 0.2s;
+}
+
+.side-menu .menu-list .menu-item .menu-text {
+  display: inline-block;
+  margin-left: 10px;
+  position: absolute;
+  padding-top: 10px;
+  color: #999;
+  transition: 0.2s;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.side-menu .menu-list .menu-item:hover .menu-text,
+.side-menu .menu-list .menu-item:hover .menu-icon svg {
+  color: #222;
+  fill: #222;
+}
+
+.side-menu .menu-list .sub-menu {
+  box-sizing: border-box;
+  margin-left: 20px;
+  padding-left: 20px;
+  overflow: hidden;
+  border-left: 1px solid #999;
+  transition: max-height 0.5s;
+}
+
+.side-menu .menu-list .sub-menu .menu-item {
+  margin: 2px 0;
+  font-size: 12px;
+}
+
+.side-menu .menu-list .sub-menu .menu-item .menu-icon {
+  padding-top: 6px;
+  height: 34px;
+}
+
+.side-menu .menu-list .sub-menu .menu-item .menu-icon svg {
+  height: 22px;
+  width: 22px;
+}
+
+.side-menu .menu-list .sub-menu .menu-item .menu-text {
+  padding-top: 6px;
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+.side-menu .side-menu-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 15px;
+  margin-left: -15px;
+  background-color: #111;
+}
+
+.side-menu .side-menu-footer ul {
+  margin-bottom: 15px;
+}
+
+.side-menu .side-menu-footer .menu-item {
+  position: relative;
+}
+
+.side-menu .side-menu-footer .menu-item .menu-text {
+  position: absolute;
+}
+
+.side-menu .side-menu-footer .expand-menu-something-idk {
+  position: relative;
+}
+
+.side-menu .side-menu-footer .expand-menu-something-idk.hidden {
+  display: none;
+}
+
+.side-menu .side-menu-footer .expand-menu-something-idk .menu-item {
+  cursor: pointer;
+}
+
+.side-menu .side-menu-footer .expand-menu-something-idk .menu-item.active {
+  background-color: #ddd;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .menu-item.active
+  .menu-text,
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .menu-item.active
+  .menu-icon
+  svg {
+  color: #222;
+  fill: #222;
+}
+
+.side-menu .side-menu-footer .expand-menu-something-idk .expand-menu {
+  width: 0px;
+  overflow: hidden;
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  box-sizing: border-box;
+  margin-left: 30px;
+  background-color: #121212;
+  color: #999;
+  border-radius: 4px;
+  transition: width 0.2s ease-in;
+}
+
+.side-menu .side-menu-footer .expand-menu-something-idk .expand-menu .loggedIn {
+  position: absolute;
+  top: 0;
+  min-height: 1px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: auto;
+  display: none;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .loggedIn.true {
+  display: block;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .expand-menu-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px 20px 110px 20px;
+  color: #ccc;
+  width: 290px;
+  cursor: auto;
+  transition: height 0.2s;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .expand-menu-wrapper.register {
+  height: 435px;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .expand-menu-wrapper
+  .expand-menu-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  border-bottom: 1px solid #333;
+  margin: 0px 20px;
+  padding-bottom: 10px;
+}
+
+.side-menu .side-menu-footer .expand-menu-something-idk .expand-menu.expanded {
+  width: 290px;
+}
+
+.side-menu .side-menu-footer .expand-menu-something-idk .expand-menu form {
+  padding-top: 50px;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .form-label {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.side-menu .side-menu-footer .expand-menu-something-idk .expand-menu input {
+  background-color: #333;
+  border: none;
+  color: #ccc;
+  outline: none;
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  input:focus {
+  box-shadow: none;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .expand-menu-footer {
+  position: absolute;
+  margin: 0px 20px 20px 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .expand-menu-button {
+  margin-top: 5px;
+  background-color: #bbb;
+  border: none;
+  color: #111;
+  width: 100%;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .expand-menu-button:hover {
+  background-color: #ddd;
+  color: #222;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .expand-menu-button:focus {
+  box-shadow: none;
+}
+
+.side-menu .side-menu-footer .expand-menu-something-idk .expand-menu .alert {
+  padding: 3px 15px;
+  height: 40px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .alert
+  strong {
+  font-size: 14px;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .expand-menu-logout {
+  text-align: center;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .expand-menu-button.yesno {
+  width: 80px;
+  margin: 5px 10px 0px 10px;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .login-menu-small-text {
+  font-size: 12px;
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+  color: #bbb;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .login-menu-small-text
+  .login-menu-small-text-link {
+  text-decoration: underline;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .login-menu-small-text
+  .login-menu-small-text-link:hover {
+  color: #ddd;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .register-menu {
+  position: absolute;
+  top: 0;
+  left: 270px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  transition: left 0.2s;
+  background-color: #121212;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .register-menu.active {
+  left: 0;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .register-menu
+  .register-menu-back-button {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding: 0px 30px 0px 0px;
+  font-size: 16px;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .register-menu
+  .register-menu-back-button
+  svg {
+  fill: #ccc;
+}
+
+.side-menu
+  .side-menu-footer
+  .expand-menu-something-idk
+  .expand-menu
+  .register-menu
+  .register-menu-back-button:hover
+  svg {
+  fill: #eee;
+}

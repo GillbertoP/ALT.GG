@@ -1,0 +1,31 @@
+.section-guide .section-card-subtitle {
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section-card-head-wrapper {
+  text-align: left;
+  padding: 3px 20px;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #ddd;
+}
+
+.section-card-head-icon {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 10px;
+  padding-bottom: 2px;
+}
+
+.section-card-head-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.section-card-head-text {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+}

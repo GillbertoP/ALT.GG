@@ -1,0 +1,21 @@
+body {
+  background-color: #ededed;
+  padding: 0px;
+}
+
+.App {
+  text-align: center;
+}
+
+.sideMenu {
+  position: fixed;
+  background-color: #bbb;
+  width: 300px;
+  height: 100%;
+}
+
+main {
+  box-sizing: border-box;
+  padding-left: 70px;
+  width: 100%;
+}
