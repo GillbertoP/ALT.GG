@@ -31,7 +31,7 @@ const guideSchema = mongoose.Schema(
       type: String,
       required: true,
       default:
-        "https://i.kym-cdn.com/entries/icons/original/000/037/224/DdJoHa8XUAIClgI.jpeg",
+        "https://res.cloudinary.com/seproject/image/upload/v1665155736/GuideImage/download_3_nj3u2n.png",
     },
     views: {
       type: Number,

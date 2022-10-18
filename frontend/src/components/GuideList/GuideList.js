@@ -19,10 +19,16 @@ const GuideList = ({
   const guideList = useSelector((state) => state.guideList);
   const { loading, guides, error } = guideList;
 
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
+
   const navigate = useNavigate();
   const clickHandler = (e) => {
-    navigate("/createguide");
-    localStorage.setItem("passGameId", gameId);
+    if (userInfo) {
+      navigate("/createguide");
+    } else {
+      alert("Not logged in");
+    }
   };
 
   useEffect(() => {
@@ -37,7 +43,12 @@ const GuideList = ({
             <div className="section-title-text">{sectionTitle}</div>
             {sectionCreateGuideButton === "true" && (
               <div className="section-header-button">
-                <Button onClick={clickHandler}>Create new guide</Button>
+                <Button
+                  onClick={clickHandler}
+                  className={userInfo ? "notLoggedIn" : ""}
+                >
+                  Create new guide
+                </Button>
               </div>
             )}
           </div>
